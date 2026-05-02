@@ -455,7 +455,7 @@ body {
   flex-direction: column;
   justify-content: end;
   gap: 10px;
-  
+  padding-bottom: 40px;
   color: var(--color-text);
 }
 
