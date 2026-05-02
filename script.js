@@ -9,7 +9,7 @@ form.addEventListener("submit", async (e) => {
   formSendResult.textContent = "";
   const drinks = formData.getAll("drinks");
   const submitButton = document.querySelector(".button");
-  submitButton.textContent = "Отправка...";
+  submitButton.textContent = "отправка...";
   const drinksString = drinks.join(", ");
   // Преобразуем массив в строку с разделителем (например, запятая)
 
@@ -32,7 +32,7 @@ form.addEventListener("submit", async (e) => {
     console.error(error);
   } finally {
     // Возвращаем кнопку в исходное состояние
-    submitButton.textContent = "Отправить";
+    submitButton.textContent = "отправить";
   }
 });
 
