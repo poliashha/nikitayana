@@ -1,0 +1,563 @@
+body {
+  background-color: var(--background-color);
+}
+
+.header {
+  max-width: 412px;
+  margin: auto;
+  padding: 35px 26px 9px 52px;
+}
+
+.title {
+  font-size: 20px;
+  font-family: var(--main-font);
+  text-align: center;
+}
+
+.text-left {
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.line {
+  width: 49px;
+  height: 2px;
+  background-color: var(--pink);
+  display: block;
+}
+
+.kursiv {
+  font-family: var(--kursiv-text);
+  text-align: center;
+  font-size: 64px;
+  color: var(--brown);
+}
+
+.text-appercase {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.main {
+  max-width: 412px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.merrid {
+  padding: 0 24px;
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.box-merrid {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.audio {
+  width: 62px;
+  height: 42px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.audio.fixed {
+  position: fixed;
+  top: 30px;
+  right: 15px;
+  z-index: 3;
+  animation: fix 0.5s ease forwards;
+  width: 42px;
+  height: 42px;
+}
+
+.text-audio {
+  font-size: 15px;
+  line-height: 184%;
+}
+
+.black-line {
+  height: 33px;
+  width: 1px;
+  background-color: var(--color-text);
+  display: block;
+}
+
+.but-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.box-music {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.date-text {
+  font-size: 48px;
+}
+
+.green {
+  color: var(--green);
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.timig{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timing {
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0) ;
+  transition: all 0.7s cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+
+.heart.visible {
+  opacity: 1;
+  transform: scale(1) ;
+}
+
+.first {
+  top: 44px;
+  left: 77px;
+}
+
+.second {
+  top: 127px;
+  right: 80px;
+}
+
+.third {
+  bottom: 207px;
+  left: 152px;
+}
+
+.four {
+  bottom: 43px;
+  left: 88px;
+}
+
+.lication{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 30px;
+}
+
+.locatiom-img{
+  max-width: 259px;
+  aspect-ratio: 259/259;
+}
+
+.map-button{
+  padding: 5px 20px;
+  background-color: var(--pink);
+  border: none;
+  border-radius: 23px;
+}
+
+.href{
+  text-decoration: none;
+  color: var(--background-color);
+  font-size: 15px;
+  font-family: var(--main-font);  
+}
+
+.box-ledi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  
+}
+
+.dress-title{
+  margin-top: -13px;
+}
+
+.dresscode{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 18px;
+}
+
+.dital-box{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  
+}
+
+.dital{
+  padding: 0 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  height: auto;
+  transition: height 0.3s ease;
+ 
+  font-family: var(--main-font);
+}
+
+.anketa{
+   padding: 0 40px;
+}
+
+.anketa-text{
+  font-size: 17px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+.custom-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-circle {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--green);
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.15s;
+  position: relative;
+
+}
+
+.input {
+  border: 1px solid var(--green);
+  max-width: 330px;
+  width: 100%;
+  height: 33px;
+  margin-top: 9px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+.custom-radio:hover .radio-circle {
+  border-color: var(--green);
+}
+
+.custom-radio input[type="radio"]:checked + .radio-circle {
+  border-color: var(--green);
+  background: var(--green);
+}
+
+.radio-text {
+  text-align: left;
+  font-size: 20px;
+  font-family: var(--kursiv-text);
+  color: var(--brown);
+  font-weight: 400;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.checkbox__input {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--pink);
+  background-color: transparent;
+  width: 14px;
+  height: 14px;
+  outline: none;
+  border-radius: 0;
+}
+
+.checkbox__input:checked::after {
+  content: "✓";
+  font-size: 12px;
+}
+
+.button {
+  max-width: 330px;
+  width: 100%;
+  transition: all 0.3s ease;
+  padding: 7px 7px;
+  justify-self: center;
+  align-self: center;
+  font-family: var(--main-font);
+  color: white;
+}
+
+.button.touch-pressed {
+  background-color: #d18a8a;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: #d18a8a;
+   
+  }
+}
+
+.form-send {
+  text-align: center;
+}
+
+.error-text {
+  display: none;
+}
+
+.error-text.show {
+  display: block;
+  animation: show 0.3s ease;
+}
+
+.radio-error {
+  display: none;
+  text-align: left;
+  font-size: 15px;
+}
+
+.radio-error.show {
+  display: block;
+  animation: show 0.3s ease;
+}
+
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.varints-text {
+  padding-bottom: 5px;
+}
+
+.varints {
+  padding-bottom: 13px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.custom-radio {
+  font-size: 20px;
+  text-align: left;
+}
+
+.checkbox {
+  font-size: 20px;
+}
+
+.error-icon {
+  font-size: 16px;
+}
+
+.input_box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: var(--main-font);
+}
+
+.box-anketa{
+  position: relative;
+  max-width: 412px;
+  z-index: 0;
+  padding-top: 30px;
+}
+
+.image-anketa{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 1;
+}
+
+.anketa{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 20px;
+}
+
+.text-input{
+  font-size: 18px;
+}
+
+.countdown{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+  
+  color: var(--color-text);
+}
+
+.title-timer {
+  font-size: 20px;
+  font-weight: 200;
+  color: var(--timer-text);
+  margin-bottom: 10px;
+}
+
+.timer-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.timer-text {
+  font-size: 24px;
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--green);
+  position: relative;
+  width: 39px;
+  height: 47px;
+  background-color: #d9d9d9;
+  border-radius: 3px;
+  padding: 9px 3px;
+}
+
+.colon {
+  width: auto;
+  font-size: 24px;
+  color: var(--green);
+}
+
+.days::after {
+  content: "дней";
+  position: absolute;
+  top: 49px;
+  right: 6px;
+  font-size: 12px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.hours::after {
+  content: "часов";
+  position: absolute;
+  top: 49px;
+  right: 5px;
+  font-size: 12px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.minutes::after {
+  content: "минут";
+  position: absolute;
+  top: 49px;
+  right: 3px;
+  font-size: 12px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.seconds::after {
+  content: "секунд";
+  position: absolute;
+  top: 49px;
+  right: -2px;
+  font-size: 12px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.line-timer {
+  width: 0.5px;
+  height: 25px;
+  background-color: rgba(252, 247, 243, 0.5);
+  margin-top: 3px;
+}
+
+.footer-img{
+  max-width: 350px;
+  aspect-ratio: 350/350;
+}
+
+.timer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (width<412px) {
+  .first-img {
+    max-width: 412px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 334/454;
+  }
+}
