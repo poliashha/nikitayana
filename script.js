@@ -214,19 +214,7 @@ btn.addEventListener("click", () => {
   }
 });
 
-// Если автовоспроизведение заблокировано - запускаем по первому клику в любом месте
-document.body.addEventListener(
-  "click",
-  function firstClick() {
-    if (!isPlaying && audio.paused) {
-      audio.play();
-      isPlaying = true;
-      img.data = "./img/on.svg";
-    }
-    document.body.removeEventListener("click", firstClick);
-  },
-  { once: true },
-);
+
 
 const audioBtn = document.getElementById("audioBtn");
 
